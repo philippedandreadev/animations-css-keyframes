@@ -29,10 +29,12 @@ h1 {
     animation-name: deplacement;
     /* Durée de l'animation */
     animation-duration: 2s;
-    /* Itération de l'animation */
-    animation-iteration-count: infinite;
+    /* Itération de l'animation 
+    animation-iteration-count: infinite; */
     /* Progression de l'animation */
     animation-timing-function: ease-in;
+    /* Manière dont l'animation se termine */
+    animation-fill-mode: both;
 }
 .item-2 {
     width: 150px;
@@ -41,7 +43,7 @@ h1 {
     border: 5px solid black;
     border-radius: 10px;
     /* Propriété raccourci */
-    animation: deplacement 2s ease-out infinite;
+    animation: deplacement 2s ease-out both;
 }
 /* On définit l'animation */
 @keyframes deplacement {
