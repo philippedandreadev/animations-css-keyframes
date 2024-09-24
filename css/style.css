@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #f5f5f5;
+}
+
+.container {
+    min-height: 80vh;
+    margin: 0 auto;
+    background: white;
+    
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
+    color: white;
+    background: black;
+    padding: 1em;
+}
+.item {
+    width: 150px;
+    height: 150px;
+    background-color:mediumpurple;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    /* Nom de l'animation */
+    animation-name: deplacement;
+    /* Durée de l'animation */
+    animation-duration: 2s;
+    /* Itération de l'animation */
+    animation-iteration-count: infinite;
+    /* Progression de l'animation */
+    animation-timing-function: ease-in;
+}
+.item-2 {
+    width: 150px;
+    height: 150px;
+    background-color:teal;
+    border: 5px solid black;
+    border-radius: 10px;
+    /* Propriété raccourci */
+    animation: deplacement 2s ease-out infinite;
+}
+/* On définit l'animation */
+@keyframes deplacement {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(400px);
+        background-color: yellow;
+    }
+}
